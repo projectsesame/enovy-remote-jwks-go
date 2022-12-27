@@ -90,6 +90,7 @@ func main() {
 			}
 			writer.Write([]byte("The token is valid."))
 		})
+		fmt.Println(fmt.Sprintf("listen address is :%s:%d", address, port))
 		http.ListenAndServe(fmt.Sprintf("%s:%d", address, port), nil)
 
 	default:
